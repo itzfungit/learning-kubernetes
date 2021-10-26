@@ -1,7 +1,16 @@
-# Install zsh and oh-my-zsh
+## Install zsh and oh-my-zsh
 # sudo apt-get install zsh
 # sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+## Install P10k - TBD
+
+# Development/Ops related configs
+KUBECONFIG_PROD=$HOME/kubeconfigs/prod-sk-dev-w.yaml
+KUBECONFIG_K3S_RESTLESS=$HOME/kubeconfigs/k3s-restless.yaml
+alias k='kubectl'
+alias h='helm'
+alias k-restless='export KUBECONFIG=$KUBECONFIG_K3S_RESTLESS'
+alias k-prod='export KUBECONFIG=$KUBECONFIG_PROD'
 
 # Set up the prompt
 
