@@ -59,3 +59,23 @@ sudo mkdir /data
 #mkdir -p $HOME/.kube
 #sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 #sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+
+# Install Ansible
+# https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+python3 -m pip -V
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+
+# Install Ansible
+python3 -m pip install --user ansible
+
+# Install specific version
+#python3 -m pip install --user ansible-core==2.12.3
+
+# Upgrade Ansible
+python3 -m pip install --upgrade --user ansible
+
+# Confirm Ansible Installation
+ansible --version
+
