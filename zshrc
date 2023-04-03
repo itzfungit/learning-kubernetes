@@ -2,7 +2,11 @@
 # sudo apt-get install zsh
 # sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-## Install P10k - TBD
+#
+## Install P10k
+# git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+# set THEME in .zshrc
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Development/Ops related configs
 KUBECONFIG_PROD=$HOME/kubeconfigs/prod-sk-dev-w.yaml
